@@ -22,19 +22,19 @@ void desenho() {
 void teclado(unsigned char tecla, int x, int y) {
    
     switch (tecla) {
-        case 'x': angX += 5.0f; 
+        case 'x': angX += 5.0; 
         break; 
-        case 'X': angX -= 5.0f; 
-        break; 
-        
-        case 'y': angY += 5.0f;
-        break; 
-        case 'Y': angY -= 5.0f; 
+        case 'X': angX -= 5.0; 
         break; 
         
-        case 'z': angZ += 5.0f; 
+        case 'y': angY += 5.0;
+        break; 
+        case 'Y': angY -= 5.0; 
+        break; 
+        
+        case 'z': angZ += 5.0; 
         break;
-        case 'Z': angZ -= 5.0f; 
+        case 'Z': angZ -= 5.0; 
         break; 
     }
     glutPostRedisplay(); 
