@@ -1,29 +1,29 @@
 #include <GL/glut.h>
 
-float posX = 0.0f;
-float posY = 0.0f;
+float posX = 0.0;
+float posY = 0.0;
 
 void desenhar() {
     glClear(GL_COLOR_BUFFER_BIT);
 
     glLoadIdentity();
 
-    // Translação
-    glTranslatef(posX, posY, 0.0f);
 
-    // Desenha um quadrado
+    glTranslatef(posX, posY, 0.0);
+
+
     glBegin(GL_QUADS);
-        glVertex2f(-0.1f, -0.1f);
-        glVertex2f( 0.1f, -0.1f);
-        glVertex2f( 0.1f,  0.1f);
-        glVertex2f(-0.1f,  0.1f);
+        glVertex2f(-0.1, -0.1);
+        glVertex2f( 0.1, -0.1);
+        glVertex2f( 0.1,  0.1);
+        glVertex2f(-0.1,  0.1);
     glEnd();
 
     glFlush();
 }
 
 void teclado(unsigned char tecla, int x, int y) {
-    float passo = 0.05f;
+    float passo = 0.05;
 
     switch (tecla) {
         case 'w':
@@ -44,8 +44,8 @@ void teclado(unsigned char tecla, int x, int y) {
 }
 
 void inicializar() {
-    glClearColor(1.0, 1.0, 1.0, 1.0); // Fundo branco
-    glColor3f(0.0, 0.0, 1.0);         // Quadrado azul
+    glClearColor(1.0, 1.0, 1.0, 1.0); 
+    glColor3f(0.0, 0.0, 1.0);         
 }
 
 int main(int argc, char** argv) {
