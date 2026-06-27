@@ -46,7 +46,7 @@ int main(int argc, char** argv) {
     glutInitWindowSize(500, 500);
     glutCreateWindow("Rotacao GLUT Simples");
 
-    // Registra apenas o essencial
+    
     glutDisplayFunc(desenho);
     glutKeyboardFunc(teclado);
 
