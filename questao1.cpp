@@ -1,6 +1,4 @@
 #include <GL/glut.h>
-#include <iostream>
-#include <string>
 
 float posX = 0.0f;
 float posY = 0.0f;
